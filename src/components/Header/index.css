@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+
+:root{
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --Red: hsl(0, 87%, 67%);
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+
+.header{
+    padding: 25px 156px;
+    display: flex;
+    top: 0;
+    left: 0;
+
+    position: sticky;
+    z-index: 5;
+    font-size: 18px;
+    font-family: 'Poppins';
+    background-color: white;
+    margin-bottom: 70px;
+}
+
+.navlogo{
+    height: 38px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+}
+
+ul > li{
+    list-style: none;
+    margin-left: 37px;
+    margin-top: 7px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--Gray);
+}
+ul > li:hover{
+    color: var(--Very-Dark-Violet)
+}
+
+ul > button{
+    background-color: var(--Cyan);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    width: 106px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 37px;
+    
+}
+
+.hamlogo, .close-icon{
+    display: none;
+}
+@media screen and (max-width: 1050px) {
+    *,body, .header, nav, ul, li{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        padding: 38px 25px;
+    }
+}
+    
+
+@media screen and (max-width: 740px) {
+    *,body, .header, nav, ul, li{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        padding: 38px 25px;
+    }
+   
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 58px;
+        position: absolute;
+    }
+    .navlogo{
+        height: 35px;
+        width: 122px;
+    }
+    .navbar{
+        display: none;
+    }
+    ul{
+        /* transition: 2s ease-in-out; */
+        background-color: var(--Dark-Violet);
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 25px;
+    }
+    .list1{
+        border-radius: 10px 10px 0px 0px;
+        padding-top: 44px;
+        
+    }
+    .list2{
+        border-radius: 0px 0px 10px 10px;
+        padding-bottom: 44px;
+        padding-top: 25px;
+    }
+    
+    li{
+        margin-right: 55px;
+        margin-bottom: 38px;
+        font-weight: 700;
+    }
+        
+
+    ul > button{
+        display: block;
+        width: 80%;
+        font-size: 18px;
+        font-weight: 700;
+        
+    }
+   
+    .hamlogo, .close-icon{
+        display: block;
+        position: absolute;
+        right: 22px;
+        color: var(--Grayish-Violet);
+
+    }
+    
+}
