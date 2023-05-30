@@ -8,7 +8,8 @@ function Title() {
         <div className="title-header">
             <h1>More than just shorter links</h1>
             <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-            <button>Get started</button>
+            <button className='btn-2
+            '>Get started</button>
         </div>
         <div className='title-image'>
             <img src={Titleimage} alt='lady working with laptop on desk'/>
