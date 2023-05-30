@@ -36,7 +36,7 @@ function MiddleComponent() {
         </div> 
         <div className='middle-info3'>
           <h1>Boost your links today</h1>
-          <button className='btn-2'>Get Started</button>
+          <button className='btn-2 hover-btn'>Get Started</button>
         </div>
     </div>
   )

@@ -35,7 +35,7 @@ const Header= () => {
             <li>
               Login
             </li>
-              <button>Sign Up</button>
+              <button className='hover-btn'>Sign Up</button>
           </ul>
         </nav>
         <div className='menu-icon' onClick={handleNav}>

@@ -20,7 +20,7 @@
     border-radius: 10px;
     background-image: url('../../assets/images/bg-shorten-desktop.svg');
     background-repeat: no-repeat;
-   
+    background-size: cover;
 }
 .form-info1{
     align-items: center;
@@ -35,7 +35,17 @@
 .input-ele{
     width: 80%;
     padding: 9px;
+    border-radius: 5px;
+    border: none;
 
+}
+
+.error {
+    border: 1px solid red;
+  }
+  
+  .error::placeholder {
+    color: red;
 }
 
 .submit-btn{
@@ -132,6 +142,11 @@
 }
 
 @media screen and (max-width: 600px) {
+    .form{
+        background-image: url('../../assets/images/bg-shorten-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
     .form-info1{
         flex-direction: column;
         /* padding: 0; */
@@ -173,6 +188,7 @@
 
 @media screen and (max-width: 390px) {
  
+    
     .submit-btn{
        margin: 0;
         display: flex;

@@ -172,7 +172,11 @@ margin: 0px 50px;
     hr{
         width: 120vw;
     }
-
+    .middle-info3{
+        background-image: url(../../assets/images/bg-boost-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
     .middle-info3 > h1{
         font-size: 25px;
     }
